@@ -1,0 +1,23 @@
+//
+//  UIView+JRSafe.h
+//  JRCategory
+//
+//  Created by jackfrow on 2019/4/26.
+//  Copyright © 2019 jackfrow. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIView (JRSafe)
+
+- (UIEdgeInsets)jr_layoutInsets;
+
+- (CGFloat)jr_navigationHeight;
+
+-(CGFloat)jr_bottomHeight;
+
+@end
+
+NS_ASSUME_NONNULL_END
