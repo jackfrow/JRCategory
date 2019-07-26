@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSMutableDictionary+JRSafe.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSMutableDictionary* mudic = @{}.mutableCopy;
+    [mudic jr_setObj:@"123" forKey:nil];
+//    [mudic setObject:@"123" forKey:nil];
 }
 
 
